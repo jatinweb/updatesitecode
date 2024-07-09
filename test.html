@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rotating Square Example</title>
+  <style type="text/css">
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    div {
+      perspective: 500px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .square {
+      transform: rotateY(45deg); /* Initial rotation */
+      animation: rotateAnimation 5s linear infinite; /* Animation properties */
+    }
+
+    @keyframes rotateAnimation {
+      from { transform: rotateY(45deg); }
+      to { transform: rotateY(405deg); } /* Adjust end rotation as needed */
+    }
+  
+  </style>
+</head>
+<body>
+  <div>
+    <div class="square">
+      <img src="C:\Users\jatin\Downloads\ad.png" alt="Advertisement Image">
+    </div>
+
+    <div class="d1">
+      <img src="">
+    </div>
+  </div>
+</body>
+</html>
